@@ -6,14 +6,6 @@ public class TriangleExercises
 		return "*";
 	}
 
-	public String createHorizontalLine(int length)
-	{
-		String result = "";
-		for (int currLen = 0; currLen < length; currLen++)
-			result += "*";
-		return result;
-	}
-
 	public String createVerticalLine(int height)
 	{
 		String result = "";
