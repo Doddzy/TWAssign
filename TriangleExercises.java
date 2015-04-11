@@ -10,7 +10,7 @@ public class TriangleExercises
 	{
 		String result = "";
 		for (int currLen = 0; currLen < height; currLen++)
-			result += "*/n";
+			result += "*\n";
 		return result;
 	}
 
@@ -19,8 +19,15 @@ public class TriangleExercises
 		String triangle = "";
 		for (int currHeight = 1; currHeight <= size; currHeight++)
 		{
-			triangle += createVerticalLine(currHeight) + "\n";
+			triangle += createHorizontalLine(currHeight) + "\n";
 		}
 		return triangle;
+	}
+	public String createHorizontalLine(int length)
+	{
+		String result = "";
+		for (int currLen = 0; currLen < length; currLen++)
+			result += "*";
+		return result;
 	}
 }
